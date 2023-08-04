@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import navbar from './components/navbar.vue'
 </script>
 
 <template>
@@ -17,16 +18,8 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
+  <navbar />
 
   <RouterView />
-  <CNavbar color-scheme="light" class="bg-light">
-  <CContainer fluid>
-    <CNavbarBrand href="#">
-      <img src="@/assets/icon.png" alt="" width="50" height="50"/>
-    </CNavbarBrand>
-  </CContainer>
-</CNavbar>
-</template>
 
-<style scoped>
-</style>
+</template>
